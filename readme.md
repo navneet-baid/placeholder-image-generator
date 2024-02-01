@@ -46,9 +46,8 @@ Start the server
 
 ## API Documentation
 
-```
 Access the image placeholder API by making HTTP requests.
-```
+
 ```Endpoint:``` /image-placeholder
 
 Generates a placeholder image with customizable parameters.
