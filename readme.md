@@ -83,7 +83,7 @@ Generates a placeholder image with customizable parameters.
 ## Example
 
 ```http
-GET /image-placeholder?width=400&height=200&message=Custom%20Text&bgColor=ffcc00&textColor=333333&fontSize=20&textBorderSize=2&textBorderColor=ffffff
+GET https://placeholder-image-api.onrender.com/image-placeholder?width=400&height=200&message=Custom%20Text&bgColor=ffcc00&textColor=333333&fontSize=20&textBorderSize=2&textBorderColor=ffffff
 ```
 
 Response: A dynamically generated image based on the provided parameters.
