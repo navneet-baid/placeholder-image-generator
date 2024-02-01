@@ -54,9 +54,9 @@ Generates a placeholder image with customizable parameters.
 
 ### Parameters
 
-```width``` (optional, default: 300): Width of the image.
+```w``` (optional, default: 300): Width of the image.
 
-```height``` (optional, default: 150): Height of the image.
+```h``` (optional, default: 150): Height of the image.
 
 ```message``` (optional, default: "{width}x{height}"): Text message displayed on the image.
 
@@ -83,7 +83,7 @@ Generates a placeholder image with customizable parameters.
 ## Example
 
 ```http
-GET https://placeholder-image-api.onrender.com/image-placeholder?width=400&height=200&message=Custom%20Text&bgColor=ffcc00&textColor=333333&fontSize=20&textBorderSize=2&textBorderColor=ffffff
+GET https://placeholder-image-api.onrender.com/image-placeholder?w=400&h=200&message=Custom%20Text&bgColor=ffcc00&textColor=333333&fontSize=20&textBorderSize=2&textBorderColor=ffffff
 ```
 
 Response: A dynamically generated image based on the provided parameters.
