@@ -1,58 +1,94 @@
 
-** Placeholder Image Generator: Paint Your Visions into Reality ️✨**
+# Placeholder Image Generator
 
-**Tired of those boring, static placeholder images? **
+Placeholder Image Generator is a dynamic image placeholder generator with customization options. It allows you to create placeholder images with custom dimensions, text, colors, and more.
 
-**Say hello to a dynamic image placeholder generator that lets you unleash your creativity and customize every pixel! **
+## Table of Contents
 
-Here's how to unleash its power:
+- [Usage](#usage)
+  - [Installation](#installation)
+  - [Start the Server](#start-the-server)
+  - [Access the API](#access-the-api)
+- [API Documentation](#api-documentation)
+  - [Endpoint: /image-placeholder](#endpoint-image-placeholder)
+    - [Parameters](#parameters)
+    - [Example](#example)
+- [License](#license)
 
-** Usage**
 
-1. ️ Installation
 
-Bash
-npm install  # Get the party started!
-Use code with caution. Learn more
-2. ️ Start the Server
+## Run Locally
 
-Bash
-npm start  # Let's get this show on the road!
-Use code with caution. Learn more
-3.  Access the API
+Clone the project
 
-Tap into the magic of placeholder image creation with HTTP requests.
+```bash
+  git clone https://github.com/navneet-baid/placeholder-image-generator
+```
 
-** API Documentation**
+Go to the project directory
 
-Endpoint: /image-placeholder
+```bash
+  cd placeholder-image-generator
+```
 
-- Parameters
+Install dependencies
 
-Customize your placeholder images to perfection:
+```bash
+  npm install
+```
 
-width (optional, default: 300)
-height (optional, default: 150)
-message (optional, default: "{width}x{height}")
-bgColor (optional, default: "cccccc")
-textColor (optional, default: "000000")
-fontSize (optional, default: 16)
-fontFamily (optional, default: "sans-serif")
-textAnchor (optional, default: "middle")
-textX (optional, default: "50%")
-textY (optional, default: "50%")
-textBorderSize (optional, default: "")
-textBorderColor (optional, default: "")
-borderRadius (optional, default: "")
-- Example
+Start the server
 
-HTTP
+```bash
+  npm start
+```
+
+
+## API Documentation
+
+```
+Access the image placeholder API by making HTTP requests.
+```
+```Endpoint:``` /image-placeholder
+
+Generates a placeholder image with customizable parameters.
+
+### Parameters
+
+```width``` (optional, default: 300): Width of the image.
+
+```height``` (optional, default: 150): Height of the image.
+
+```message``` (optional, default: "{width}x{height}"): Text message displayed on the image.
+
+```bgColor``` (optional, default: "cccccc"): Background color of the image (hex code).
+
+```textColor``` (optional, default: "000000"): Text color (hex code).
+
+```fontSize``` (optional, default: 16): Font size of the text.
+
+```fontFamily``` (optional, default: "sans-serif"): Font family of the text.
+
+```textAnchor``` (optional, default: "middle"): Text anchor position ("start", "middle", or "end").
+
+```textX``` (optional, default: "50%"): X-axis position of the text.
+
+```textY``` (optional, default: "50%"): Y-axis position of the text.
+
+```textBorderSize``` (optional, default: ""): Size of the text border.
+
+```textBorderColor``` (optional, default: ""): Color of the text border (hex code).
+
+```borderRadius``` (optional, default: ""): Border radius of the image.
+
+## Example
+
+```http
 GET /image-placeholder?width=400&height=200&message=Custom%20Text&bgColor=ffcc00&textColor=333333&fontSize=20&textBorderSize=2&textBorderColor=ffffff
-Use code with caution. Learn more
-Response: A dynamically generated image tailored to your vision!
+```
 
-⚖️ License
+Response: A dynamically generated image based on the provided parameters.
 
-This project is licensed under the MIT License – creativity knows no bounds!
+## License
 
-Now go forth and create stunning placeholder images that will captivate your audience! ✨
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE file for details.
