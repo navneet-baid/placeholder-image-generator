@@ -1,0 +1,22 @@
+{
+  "name": "placeholder-image-generator",
+  "version": "1.0.0",
+  "description": "A dynamic image placeholder generator with customization options.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "image",
+    "placeholder",
+    "generator",
+    "dynamic",
+    "API"
+  ],
+  "author": "Navneet Baid",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sharp": "^0.33.2"
+  }
+}
